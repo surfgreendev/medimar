@@ -1,7 +1,7 @@
 <template>
     <div class w-full>
         <div>
-            <h5>Available products</h5>
+            <h5 class="font-bold mb-4 text-xl text-black">Available products</h5>
         </div>
         <div v-for="product in products" :key="product.uuid">
             <Product :product="product" />

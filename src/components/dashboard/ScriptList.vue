@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
         <div>
-            <h5>Scripts</h5>
+            <h5 class="font-bold text-xl text-black">Scripts</h5>
             <Button @click="addScript">Add script</Button>
         </div>
         <table>

@@ -1,27 +1,34 @@
 <template>
-    <div class="bg-gray-700 h-full min-h-screen">
-        <nav>
-            <ul>
-                <li v-for="navItem in navItems" :key="navItem.name">
-                    <a href="">{{ navItem.name }}</a>
+    <div class="bg-indigo-900 h-full min-h-screen">
+        <nav class="pt-6">
+            <ul >
+                <li class="p2 pl-10 pb-6 w-full" v-for="navItem in navItems" :key="navItem.name">
+                    <a class="w-auto text-xl px-5 text-white font-bold hover:color-red-700" href="">
+                        {{ navItem.name }}
+                    </a>
                 </li>
             </ul>
         </nav>
 
-        <nav>
+        <nav class="mt-10">
             <ul>
-                <li v-for="supportNavItem in supportNavItems" :key="supportNavItem.name">
-                    <a href="">{{ supportNavItem.name }}</a>
+                <li
+                class="p2 pl-10 pb-6"
+                v-for="supportNavItem in supportNavItems"
+                :key="supportNavItem.name">
+                    <a class="text-xl px-5 text-white font-bold" href="">
+                        {{ supportNavItem.name }}
+                    </a>
                 </li>
             </ul>
         </nav>
 
-        <div>
-            <ul>
-                <li>
-                    <h5>Mediamar &copy; 2020</h5>
+        <div class="flex items-stretch justify-center">
+            <ul class="text-white text-center">
+                <li class="display block">
+                    <h5 class="font-bold">Mediamar &copy; 2020</h5>
                 </li>
-                <li>
+                <li class="block">
                     <a href="">Privacy</a> &centerdot; <a href="">Terms & Condition</a>
                 </li>
             </ul>
@@ -35,12 +42,12 @@ export default {
   data() {
     return {
       navItems: [
-        { name: 'Home', isActive: 'false', icon: '' },
-        { name: 'Dispensary', isActive: 'false', icon: '' },
-        { name: 'Patients', isActive: 'true', icon: '' },
-        { name: 'Pharmacy Orders', isActive: 'false', icon: '' },
-        { name: 'Reports', isActive: 'false', icon: '' },
-        { name: 'Education Resources', isActive: 'false', icon: '' },
+        { name: 'Home', isActive: 'false', icon: 'home' },
+        { name: 'Dispensary', isActive: 'false', icon: 'add' },
+        { name: 'Patients', isActive: 'true', icon: 'user' },
+        { name: 'Pharmacy Orders', isActive: 'false', icon: 'shopping-bag' },
+        { name: 'Reports', isActive: 'false', icon: 'home' },
+        { name: 'Education Resources', isActive: 'false', icon: 'home' },
       ],
       supportNavItems: [
         { name: 'FAQs', isActive: 'false', icon: '' },

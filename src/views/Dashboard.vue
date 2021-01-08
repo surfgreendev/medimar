@@ -2,14 +2,13 @@
 <div>
     <Header/>
     <main class="flex w-full bg-gray-200">
-      <div>
-        <a href="">Back to patients list</a>
-      </div>
       <div class="sm:w-1/12 md:w-3/12 lg:w-2/12 xl:w-3/12">
         <Sidebar />
       </div>
-      <div class="sm:w-11/12 md:w-9/12 lg:w-10/12 xl:9/12">
-        Main
+      <div class="ml-10 mr-10 mt-10 sm:w-11/12 md:w-9/12 lg:w-10/12 xl:9/12">
+        <div class="flex">
+          <a class="font-bold text-blue-500" href="">Back to patients list</a>
+        </div>
         <Contact :contactData="contactData"/>
         <ProductList :products="products"/>
         <ScriptList :scripts="scripts"/>
