@@ -7,6 +7,9 @@
       </div>
       <div class="sm:w-11/12 md:w-9/12 lg:w-10/12 xl:9/12">
         Main
+        <Contact />
+        <ProductList/>
+        <ScriptList/>
       </div>
     </main>
 </div>
@@ -15,12 +18,18 @@
 <script>
 import Header from '@/components/header/Header.vue';
 import Sidebar from '@/components/sidebar/Sidebar.vue';
+import Contact from '@/components/dashboard/Contact.vue';
+import ProductList from '@/components/dashboard/ProductList.vue';
+import ScriptList from '@/components/dashboard/ScriptList.vue';
 
 export default {
   name: 'Dashboard',
   components: {
     Header,
     Sidebar,
+    Contact,
+    ProductList,
+    ScriptList,
   },
 };
 </script>
