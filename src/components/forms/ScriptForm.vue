@@ -17,7 +17,3 @@ export default {
   name: 'AddScriptForm',
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
