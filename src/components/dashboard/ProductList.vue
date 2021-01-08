@@ -1,7 +1,11 @@
 <template>
     <div class w-full>
-        Product List
-        <Product />
+        <div>
+            <h5>Available products</h5>
+        </div>
+        <div v-for="product in products" :key="product.uuid">
+            <Product :product="product" />
+        </div>
     </div>
 </template>
 
@@ -12,7 +16,12 @@ export default {
   name: 'ProductList',
   components: {
     Product,
-
+  },
+  props: {
+    products: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>
