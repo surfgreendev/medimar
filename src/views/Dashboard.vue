@@ -2,6 +2,9 @@
 <div>
     <Header/>
     <main class="flex w-full bg-gray-200">
+      <div>
+        <a href="">Back to patients list</a>
+      </div>
       <div class="sm:w-1/12 md:w-3/12 lg:w-2/12 xl:w-3/12">
         <Sidebar />
       </div>
@@ -30,6 +33,91 @@ export default {
     Contact,
     ProductList,
     ScriptList,
+  },
+  data() {
+    return {
+      contactData: {
+        gender: 'm',
+        firstName: 'John',
+        lastName: 'Smith',
+        dob: '22 October 1995',
+        medicare: '45092458',
+        eMail: 'smithjohn@gmail.com',
+        phone: '0481 123 456',
+        adress: '22 Smith Street, Redfern NSW 2016',
+        avatar: '',
+      },
+      products: [
+        {
+          name: 'ProductB Cannibis Oil',
+          unitPrice: 44.50,
+          quantity: 3,
+          total: 133.50,
+          currency: '$',
+          description: 'Liquid, Bottle, 25 (mL)',
+          inStock: true,
+          nextRepeatDate: '31 Oct 2020',
+          stock: 3,
+          onOrder: 0,
+        },
+        {
+          name: 'Productz Cannibis Oil',
+          unitPrice: 44.50,
+          quantity: 3,
+          total: 133.50,
+          currency: '$',
+          description: 'Liquid, Bottle, 25 (mL)',
+          inStock: true,
+          nextRepeatDate: '31 Oct 2020',
+          stock: 3,
+          onOrder: 0,
+        },
+      ],
+      scripts: [
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Active',
+        },
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Active',
+        },
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Awaiting approval',
+        },
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Completed',
+        },
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Expired',
+        },
+        {
+          prescriptionDate: '18/08/2020',
+          physcian: 'Dr Kevin Su',
+          productName: 'ProductB Canabis Oil',
+          nextRepeatDate: '12/12/2020',
+          status: 'Expired',
+        },
+      ],
+    };
   },
 };
 </script>
