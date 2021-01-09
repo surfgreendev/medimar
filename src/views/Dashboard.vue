@@ -7,7 +7,10 @@
       </div>
       <div class="ml-10 mr-10 mt-10 sm:w-11/12 md:w-9/12 lg:w-10/12 xl:9/12">
         <div class="flex">
-          <a class="font-bold text-blue-500" href="">Back to patients list</a>
+          <a class="font-bold text-blue-500" href="">
+             <font-awesome-icon icon="chevron-left"></font-awesome-icon>
+            Back to patients list
+          </a>
         </div>
         <Contact :contactData="contactData"/>
         <ProductList :products="products"/>

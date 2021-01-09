@@ -2,6 +2,8 @@
    <button class="bg-blue-500
          text-white
          p-3
+         px-8
+         font-bold
          transition
          duration-300
          ease-in-out

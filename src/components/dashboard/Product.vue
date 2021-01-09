@@ -1,7 +1,7 @@
 <template>
-    <div class="mb-10 bg-gray-50 border-4 border-light-blue-500 rounded-lg">
-        <div class="flex pt-3 pb-3 w-full bg-gray-100">
-            <div class="mx-auto">
+    <div class="mb-10 pb-5 bg-gray-50 border-2 border-solid ring-offset-0 border-gray-300 rounded-lg">
+        <div class="flex pt-3 pl-4 pr-4 pb-3 w-full border-b-2 border-solid border-gray-300 bg-gray-100 rounded-t-lg">
+            <div>
                 <h5 class="font-extrabold text-base">{{product.name}}</h5>
             </div>
             <div class="mx-auto">
@@ -9,7 +9,7 @@
                     Unit price
                 </span>
                 <span class="font-bold text-base">
-                    {{ product.unitPrice }}
+                    {{ product.currency }}{{ product.unitPrice }}
                 </span>
             </div>
             <div class="mx-auto">
@@ -20,26 +20,27 @@
                     {{ product.quantity }}
                 </span>
             </div>
-            <div class="mx-auto">
+            <div class="ml-auto">
                 <span class="font-bold text-gray-500 text-base mr-4">
                     Total
                 </span>
                 <span class="font-bold text-base">
-                    {{ product.total }}
+                    {{ product.currency }}{{ product.total }}
                 </span>
             </div>
         </div>
         <div class="flex mt-10 mb-5 ml-4">
-            {{ product.description }}
+            <span class="font-semibold">{{ product.description }}</span>
         </div>
-        <hr class="text-gray-500 h-2 block mr-4 ml-4" />
+        <hr class="text-gray-300 h-2 block mr-4 ml-4" />
         <div class="flex mt-5 ml-4 mb-4">
-            <div class="mx-auto">
-                <span class="italic">
+            <div>
+                 <font-awesome-icon icon="check-circle"></font-awesome-icon>
+                <span class="italic font-semibold">
                     Icon, Stock available to dispense
                 </span>
             </div>
-            <div class="mx-auto">
+            <div class="ml-20">
                 <span class="font-bold text-gray-500 text-base mr-4">
                     Available
                 </span>
@@ -56,8 +57,8 @@
                 </span>
             </div>
         </div>
-        <div class="flex">
-            <div class="mx-auto">
+        <div class="flex ml-4 mr-4">
+            <div class="self-center">
                 <span class="font-bold text-gray-500 text-base mr-4">
                     Next repeat available
                 </span>
@@ -65,7 +66,7 @@
                     {{ product.nextRepeatDate }}
                 </span>
             </div>
-            <div class="mx-auto">
+            <div class="ml-auto">
                 <Button>Dispense</Button>
             </div>
         </div>
