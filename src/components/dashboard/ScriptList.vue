@@ -9,23 +9,23 @@
 
     <div class="mt-5 mb-20">
         <div class="flex bg-gray-50 border-2 overflow-x-auto border-solid border-gray-300 rounded-lg">
-            <table class="w-full flex flex-row flex-no-wrap overflow-hidden">
+            <table class="w-full table-auto flex flex-row flex-no-wrap overflow-hidden">
                 <thead>
                     <tr v-for="script in scripts" :key="script.uuid" class="flex flex-col flex-no wrap sm:table-row px-4 border-solid border-b-2">
-                        <th class="pt-3 pb-3 px-4 text-left">Prescription date <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
-                        <th class="pt-3 pb-3 px-4 text-left">Physician <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
-                        <th class="pt-3 pb-3 px-4 text-left">Product name <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
-                        <th class="pt-3 pb-3 px-4 text-left">Next repeat <font-awesome-icon  class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
-                        <th class="pt-3 pb-3 px-4 sm:text-right">Status <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
+                        <th class="align-middle pt-3 pb-3 px-4 h-20 sm:h-auto text-left">Prescription date <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
+                        <th class="align-middle pt-3 pb-3 px-4 h-20 sm:h-auto text-left">Physician <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
+                        <th class="align-middle pt-3 pb-3 px-4 h-20 sm:h-auto text-left">Product name <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
+                        <th class="align-middle pt-3 pb-3 px-4 h-20 sm:h-auto text-left">Next repeat <font-awesome-icon  class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
+                        <th class="align-middle pt-3 pb-3 px-4 h-20 sm:h-auto sm:text-right">Status <font-awesome-icon class="hidden sm:inline" icon="sort"></font-awesome-icon></th>
                     </tr>
                 </thead>
                 <tbody class="flex-1 sm:flex-none">
                     <tr class="flex flex-col flex-no wrap sm:table-row px-4 border-solid border-b-2 last:border-b-0" v-for="script in scripts" :key="script.uuid">
-                        <td class="px-4 pt-3 pb-3 font-semibold">{{script.prescriptionDate}}</td>
-                        <td class="px-4 pt-3 pb-3 font-semibold">{{script.physcian}}</td>
-                        <td class="px-4 pt-3 pb-3 font-semibold">{{script.productName}}</td>
-                        <td class="px-4 pt-3 pb-3 font-semibold">{{script.nextRepeatDate}}</td>
-                        <td class="px-4 pt-3 pb-3 sm:text-right font-semibold">{{script.status}}</td>
+                        <td class="align-middle relative h-20 sm:h-auto px-4 pt-3 pb-3 font-semibold">{{script.prescriptionDate}}</td>
+                        <td class="align-middle relative h-20 sm:h-auto px-4 pt-3 pb-3 font-semibold">{{script.physcian}}</td>
+                        <td class="align-middle relative h-20 sm:h-auto px-4 pt-3 pb-3 font-semibold">{{script.productName}}</td>
+                        <td class="align-middle relative h-20 sm:h-auto px-4 pt-3 pb-3 font-semibold">{{script.nextRepeatDate}}</td>
+                        <td class="align-middle relative h-20 sm:h-auto px-4 pt-3 pb-3 sm:text-right font-semibold">{{script.status}}</td>
                     </tr>
                 </tbody>
             </table>
