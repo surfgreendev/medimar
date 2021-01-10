@@ -1,14 +1,5 @@
 <template>
-   <button class="bg-blue-500
-         text-white
-         p-3
-         px-8
-         font-bold
-         transition
-         duration-300
-         ease-in-out
-         hover:bg-blue-600
-         rounded-lg">
+   <button :class="{ 'btn__primary': isPrimary, 'btn__default': isDefault }">
        <slot></slot>
     </button>
 </template>
@@ -23,19 +14,18 @@ export default {
     },
   },
   computed: {
-    btnColor() {
+    isPrimary() {
       if (this.color === 'primary') {
-        return {
-          active: 'bg-blue-500',
-          hover: 'bg-blue-600',
-        };
+        return true;
       }
-      return this.data;
+      return false;
+    },
+    isDefault() {
+      if (this.color === 'default') {
+        return true;
+      }
+      return false;
     },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>

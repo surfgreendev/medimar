@@ -1,5 +1,25 @@
 @tailwind base;
 
+
 @tailwind components;
 
 @tailwind utilities;
+
+
+
+.btn__primary {
+    @apply bg-blue-500 text-white p-2 px-6 font-bold text-sm inline rounded-lg
+}
+
+.btn__primary:hover {
+    @apply bg-blue-600 transition duration-300 ease-in-out
+}
+.btn__default {
+    @apply bg-white text-black p-2 px-6 font-bold text-sm border-2 border-gray-200 inline rounded-lg
+}
+
+.btn__default:hover {
+    @apply transition duration-300 ease-in-out bg-gray-100
+}
+
+

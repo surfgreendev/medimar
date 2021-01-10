@@ -7,7 +7,7 @@
                         <span class="w-5 h-5 inline-block opacity-50">
                             <font-awesome-icon :icon="navItem.icon"></font-awesome-icon>
                         </span>
-                        <span class="ml-2">
+                        <span class="hidden lg:inline ml-2">
                             {{ navItem.name }}
                         </span>
 
@@ -23,7 +23,7 @@
                         <span class="w-5 h-5 inline-block opacity-50">
                             <font-awesome-icon :icon="supportNavItem.icon"></font-awesome-icon>
                         </span>
-                        <span class="ml-2">
+                        <span class="hidden lg:inline ml-2">
                             {{ supportNavItem.name }}
                         </span>
                     </a>
@@ -31,7 +31,7 @@
             </ul>
         </nav>
 
-        <div class="">
+        <div class="hidden lg:block">
             <ul class="text-white text-xs text-center">
                 <li class="display block">
                     <h5 class="font-bold">Mediamar &copy; 2020</h5>

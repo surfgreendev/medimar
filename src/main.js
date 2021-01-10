@@ -13,6 +13,7 @@ import {
   faUserCircle,
   faCheckCircle,
   faChevronLeft,
+  faSort,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
@@ -32,6 +33,7 @@ library.add(faInfoCircle);
 library.add(faUserCircle);
 library.add(faCheckCircle);
 library.add(faChevronLeft);
+library.add(faSort);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
