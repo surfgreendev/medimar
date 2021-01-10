@@ -1,8 +1,8 @@
 <template>
     <transition name="fade">
-        <div class="absolute top-10 right-10 bg-white rounded-xl shadow-md py-5 px-5">
-            <h3>Product successfully dispended</h3>
-            <p>Your product has been successfully dispended</p>
+        <div class="absolute bg-green-100 top-10 right-10 bg-white rounded-xl shadow-md py-5 px-5">
+            <h3 class="text-green-900 font-bold">Product successfully dispended</h3>
+            <p>Your product <span class="font-bold"><slot/></span> been successfully dispended</p>
         </div>
     </transition>
 </template>

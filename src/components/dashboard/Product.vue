@@ -1,6 +1,6 @@
 <template>
     <div class="mb-10 pb-5 bg-gray-50 border-2 border-solid ring-offset-0 border-gray-300 rounded-lg">
-        <Notification v-show="success" />
+        <Notification v-show="success">{{product.name}}</Notification>
         <div class="sm:mx-auto sm:flex pt-3 pl-4 pr-4 pb-3 w-full border-b-2 border-solid border-gray-300 bg-gray-100 rounded-t-lg">
             <div class="block sm:mx-auto">
                 <h5 class="font-extrabold text-base">{{product.name}}</h5>
@@ -100,6 +100,7 @@ export default {
   methods: {
     dispenseProduct() {
       this.success = true;
+
       setTimeout(() => {
         this.success = false;
       }, 3500);
