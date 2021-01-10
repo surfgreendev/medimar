@@ -1,20 +1,20 @@
 <template>
 <div>
     <Header/>
-    <main class="flex w-full bg-gray-200">
+    <main class="flex w-full overflow-x-hidden bg-gray-200">
       <div class="sm:w-1/12 md:w-1/12 lg:w-3/12 xl:w-3/12">
         <Sidebar />
       </div>
-      <div class="w-full ml-4 mr-4 mt-4 flex-wrap md:ml-10 md:mr-10 md:mt-10 sm:w-11/12 md:w-11/12 lg:w-9/12 xl:9/12">
+      <div class="ml-4 mr-4 mt-4 flex-wrap md:ml-10 md:mr-10 md:mt-10 sm:w-11/12 md:w-11/12 lg:w-9/12 xl:9/12">
         <div class="flex">
-          <a class="font-bold text-blue-500" href="">
+          <a class="font-bold text-button-blue" href="">
              <font-awesome-icon icon="chevron-left"></font-awesome-icon>
             Back to patients list
           </a>
         </div>
         <Contact :contactData="contactData"/>
         <ProductList :products="products"/>
-        <!--<ScriptList :scripts="scripts"/>-->
+    <ScriptList :scripts="scripts"/>
       </div>
     </main>
 </div>
@@ -25,7 +25,7 @@ import Header from '@/components/header/Header.vue';
 import Sidebar from '@/components/sidebar/Sidebar.vue';
 import Contact from '@/components/dashboard/Contact.vue';
 import ProductList from '@/components/dashboard/ProductList.vue';
-// import ScriptList from '@/components/dashboard/ScriptList.vue';
+import ScriptList from '@/components/dashboard/ScriptList.vue';
 
 export default {
   name: 'Dashboard',
@@ -34,7 +34,7 @@ export default {
     Sidebar,
     Contact,
     ProductList,
-    // ScriptList,
+    ScriptList,
   },
   data() {
     return {

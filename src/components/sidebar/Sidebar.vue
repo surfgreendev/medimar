@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-indigo-900 h-full min-h-screen">
+    <div class="bg-sidebar h-full min-h-screen">
         <nav class="mx-auto pt-6">
             <ul class="mx-3 relative">
                 <li class="pb-3 w-full" v-for="navItem in navItems" :key="navItem.name">
@@ -31,7 +31,7 @@
             </ul>
         </nav>
 
-        <div class="hidden lg:block">
+        <div class="hidden lg:block mt-20">
             <ul class="text-white text-xs text-center">
                 <li class="display block">
                     <h5 class="font-bold">Mediamar &copy; 2020</h5>
